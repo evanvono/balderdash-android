@@ -21,7 +21,7 @@
         android:textStyle="bold" />
     <ProgressBar
         android:indeterminate="true"
-        android:id="@+id/pbGame"
+        android:id="@+id/pbUsername"
         style="?android:attr/progressBarStyleSmall"
         android:layout_width="0dp"
         android:layout_weight="1"

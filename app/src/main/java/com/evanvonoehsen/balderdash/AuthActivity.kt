@@ -11,11 +11,12 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
+import com.evanvonoehsen.balderdash.data.FirebaseData
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_auth.*
 import java.lang.RuntimeException
 
-class AuthActivity: AppCompatActivity() {
+class AuthActivity: AppCompatActivity(), CreateUsernameDialog.CreateUsernameHandler {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
@@ -38,6 +39,7 @@ class AuthActivity: AppCompatActivity() {
             Toast.makeText(this@AuthActivity,
                 "Successfully Registered",
                 Toast.LENGTH_LONG).show()
+            CreateUsernameDialog().show(this.supportFragmentManager, "TAG_USERNAME_DIALOG")
         }.addOnFailureListener{
             Toast.makeText(this@AuthActivity,
                 "Error: ${it.message}",
@@ -85,5 +87,10 @@ class AuthActivity: AppCompatActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.statusBarColor = ContextCompat.getColor(this@AuthActivity, R.color.persimmon_variant)
+    }
+
+    override fun usernameCreated(username: String) {
+        FirebaseData.username = username
+        startActivity(Intent(this, MainMenuActivity::class.java))
     }
 }

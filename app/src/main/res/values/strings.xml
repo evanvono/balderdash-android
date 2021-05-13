@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Balderdash</string>
+    <string name="email_example_com">email@example.com</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="balderdash">Balderdash</string>
+    <string name="create_game">Create Game</string>
+    <string name="join_game">Join Game</string>
+    <string name="playeroneusername">PlayerOneUsername</string>
+    <string name="game_code">Game Code:</string>
+    <string name="_012345">012345</string>
+    <string name="waiting_for_players">Waiting for players...</string>
+    <string name="cancel">cancel</string>
+    <string name="start">start</string>
+    <string name="interface_error">Didn\'t use the gamehandler interface</string>
+    <string name="ok">ok</string>
+    <string name="find_game_error">Cannot find a game for this code</string>
+    <string name="game_code_length_requirement">Game code must be 6 digits</string>
+    <string name="game_code_placeholder">Game code</string>
+    <string name="temp_password">Password1234</string>
+    <string name="temp_email">test@example.com</string>
+    <string name="game_cancelled_message">Game has been cancelled</string>
+    <string name="loading">Loading...</string>
+    <string name="game_deleted">Game has been deleted</string>
+    <string name="choose_definition">Choose definition</string>
+    <string name="this_is_a_definition">This is a definition.</string>
+    <string name="username_placeholder">username</string>
+    <string name="close">close</string>
+    <string name="word_placeholder">Word</string>
+    <string name="scores">Scores</string>
+    <string name="continue2">continue</string>
+
+    <string-array name="tab_names">
+        <item>New Game</item>
+        <item>Words I\'ve Seen</item>
+    </string-array>
+</resources>

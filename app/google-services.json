@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219372292755",
+    "project_id": "balderdash-4ca28",
+    "storage_bucket": "balderdash-4ca28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219372292755:android:efa8b58ab193a5f1c4db66",
+        "android_client_info": {
+          "package_name": "com.evanvonoehsen.balderdash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219372292755-tsvq7gieupi2mvmvec5ggmlej0j8gfe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnGJIfw-cY7dKfxNbbJUxy7k8lRI7E5Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219372292755-tsvq7gieupi2mvmvec5ggmlej0j8gfe0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
